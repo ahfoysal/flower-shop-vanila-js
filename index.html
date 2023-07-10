@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header Section Start -->
     <header class="flex align-center justify-between">
       <div>
-        <h1>Let's make beautiful flowers a part of your life.</h1>
+        <h1>Embrace the Beauty of Blooms in Your Everyday Life.</h1>
         <p>
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
@@ -25,49 +31,119 @@
     </header>
     <!-- Featured Section Start -->
     <section>
-      <h3 class="heading-text">Our Featured Flowers</h3>
-      <p class="heading-desc">
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
-      </p>
+      <div class="section-intro-container flex flex-col align-center">
+        <h3 class="section-heading">Our Featured Flowers</h3>
+        <p class="section-desc">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+        </p>
+      </div>
       <div class="featured-container flex justify-between align-center">
         <div class="featured-item">
-            <div class="featured-image-container flex align-center justify-center">
-                <img src="./Assets/featured/featured1.png" alt="">
-            </div>
-            <p>Pink Flower Tree</p>
+          <div
+            class="featured-image-container bg-1 flex align-center justify-center"
+          >
+            <img src="./Assets/featured/featured1.png" alt="" />
+          </div>
+          <p>Pink Flower Tree</p>
         </div>
         <div class="featured-item">
-            <div class="featured-image-container flex align-center justify-center">
-                <img src="./Assets/featured/featured2.png" alt="">
-            </div>
-            <p>Pink Flower Tree</p>
+          <div
+            class="featured-image-container bg-2 flex align-center justify-center"
+          >
+            <img src="./Assets/featured/featured2.png" alt="" />
+          </div>
+          <p>Pink Flower Tree</p>
         </div>
         <div class="featured-item">
-            <div class="featured-image-container flex align-center justify-center">
-                <img src="./Assets/featured/featured3.png" alt="">
-            </div>
-            <p>Pink Flower Tree</p>
+          <div
+            class="featured-image-container bg-3 flex align-center justify-center"
+          >
+            <img src="./Assets/featured/featured3.png" alt="" />
+          </div>
+          <p>Pink Flower Tree</p>
         </div>
-        
       </div>
     </section>
     <!-- Services Section Start -->
     <section>
-        <div class="service-container flex align-center justify-around">
-            <div class="service-items">
-                <img src="./Assets/service/service1.png" alt="">
-                <p>Same Day Delivery. Click & Collect.</p>
-            </div>
-            <div class="service-items">
-                <img src="./Assets/service/service2.png" alt="">
-                <p>Fresh Flowers. Local Growers.</p>
-            </div>
-            <div class="service-items">
-                <img src="./Assets/service/service3.png" alt="">
-                <p>24/7 Free Support.</p>
-            </div>
+      <div class="service-container flex align-center justify-between">
+        <div class="service-items">
+          <img src="./Assets/service/service1.png" alt="" />
+          <p>Same Day Delivery. Click & Collect.</p>
         </div>
+        <div class="service-items">
+          <img src="./Assets/service/service2.png" alt="" />
+          <p>Fresh Flowers. Local Growers.</p>
+        </div>
+        <div class="service-items">
+          <img src="./Assets/service/service3.png" alt="" />
+          <p>24/7 Free Support.</p>
+        </div>
+      </div>
     </section>
+    <!-- Hot Deals Section Start -->
+    <section class="hot-deals flex justify-around align-center">
+      <div class="flex flex-col align-center">
+        <div class="section-intro-container flex flex-col align-center">
+          <h3 class="section-heading">
+            Hot Deal ! Sale Up To 25% <span class="text-pink">Off</span>
+          </h3>
+          <p class="section-desc">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <button class="primary-btn">Sign Up</button>
+      </div>
+      <div class="hot-deals-image-container">
+        <img src="./Assets//hot-deal/pngwing 8.png" alt="" srcset="" />
+      </div>
+    </section>
+    <!-- Instagram Section Start  -->
+    <section>
+      <div class="flex flex-col">
+        <div class="section-intro-container flex flex-col align-center">
+          <h3 class="section-heading">Instagram</h3>
+          <p class="section-desc">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="instagram-pics-container flex justify-between">
+          <img src="./Assets/instagram/insta1.png" alt="" />
+          <img src="./Assets/instagram/insta2.png" alt="" />
+          <img src="./Assets/instagram/insta3.png" alt="" />
+          <img src="./Assets/instagram/insta4.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- newsletter -->
+    <section class="newsletter">
+      <div class="section-intro-container flex flex-col align-center">
+        <h3 class="section-heading">Get The Latest Deals</h3>
+        <p class="section-desc">$30 coupon for first shopping</p>
+        <div class="newsletter-container flex">
+          <input type="text" placeholder="Enter your email here...." />
+          <button class="primary-btn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section Start  -->
+    <footer>
+      <div class="footer-intro-container flex flex-col align-center">
+        <h3 class="section-heading">
+          <span class="text-pink">Flower</span
+          ><span class="text-white">Shop</span>
+        </h3>
+        <p class="footer-desc">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+        </p>
+        <p class="copyright-text">
+          @2020-2023, FlowerShop.com. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

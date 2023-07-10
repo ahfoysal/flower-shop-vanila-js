@@ -1,7 +1,8 @@
 * {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 section {
@@ -29,56 +30,62 @@ section {
 .flex-col {
   flex-direction: column;
 }
+.text-white {
+  color: #fff;
+}
+.text-pink {
+  color: #e55473;
+}
 .primary-btn {
   border: none;
   border-radius: 8px;
-  padding: 15px 35px;
+  padding: 15px 20px;
+  height: fit-content;
   color: #fff;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 400;
   background-color: #e55473;
 }
-.heading-text {
+
+.section-heading {
   color: #272727;
   text-align: center;
-  font-size: 40px;
+  max-width: 500px;
+  font-size: 30px;
   margin-bottom: 24px;
   font-weight: 800;
 }
-.heading-desc {
+.section-desc {
   color: rgba(39, 39, 39, 0.6);
+  max-width: 500px;
+  margin-bottom: 40px;
   text-align: center;
-  font-size: 18px;
-  max-width: 600px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 /* Header */
 header {
-  /* height: 100vh; */
   background-color: rgba(229, 84, 115, 0.1);
   padding: 50px 150px 0px 150px;
-  /* background-image: url('../Assets/banner/banner2.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain; */
 }
 header h1 {
-  max-width: 700px;
+  max-width: 500px;
   color: #272727;
-  font-size: 65px;
+  font-size: 50px;
   font-weight: 800;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 header p {
   color: rgba(39, 39, 39, 0.6);
-  font-size: 18px;
+  max-width: 450px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  line-height: 1.3;
+  margin-bottom: 28px;
 }
 header img {
-  height: 650px;
+  height: 550px;
 }
 
 /* Featurd */
@@ -89,13 +96,20 @@ header img {
   align-items: center;
   gap: 20px;
 }
-
-.featured-image-container {
-  height: 350px;
-  width: 280px;
+.bg-1 {
   background-color: rgba(167, 33, 98, 0.15);
+}
+.bg-2 {
+  background-color: rgba(5, 150.7, 160, 0.15);
+}
+.bg-3 {
+  background-color: rgba(71, 125, 17, 0.15);
+}
+.featured-image-container {
+  height: 340px;
+  width: 280px;
   border-radius: 300px 300px 0 0;
-  padding: 40px 20px 0 20px;
+  padding: 50px 20px 0 20px;
 }
 
 .featured-image-container img {
@@ -107,7 +121,7 @@ header img {
 .featured-item p {
   color: #272727;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   margin-top: 30px;
   font-weight: bold;
   line-height: 1.5;
@@ -118,7 +132,15 @@ header img {
 .service-container {
   border-radius: 8px;
   background-color: rgba(39, 39, 39, 0.05);
-  padding: 75px 150px;
+  padding: 75px 130px;
+  gap: 60px;
+}
+.service-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .service-container img {
@@ -128,8 +150,67 @@ header img {
 .service-container p {
   color: rgba(39, 39, 39, 0.8);
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin-top: 20px;
   line-height: 1.5;
+}
+/* hot deals */
+.hot-deals-image-container img {
+  height: 380px;
+  width: 300px;
+}
+
+/* Instagram */
+
+.instagram-pics-container img {
+  width: 242px;
+  height: auto;
+}
+/* newsletter */
+.newsletter {
+  padding: 75px 225px;
+  background-image: url("../Assets/newsletter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newsletter-container input {
+  font-size: 14px;
+  border: none;
+  margin-right: 10px;
+  padding: 18px 225px 18px 18px;
+}
+::placeholder {
+  color: rgba(39, 39, 39, 0.6);
+  opacity: 1; /* Firefox */
+}
+input:focus {
+  outline: 1.5px solid #e55473;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #111010;
+  text-align: center;
+  padding: 100px 0;
+}
+footer .footer-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  max-width: 500px;
+  text-align: center;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+.copyright-text {
+  color: rgba(255, 255, 255, 0.4);
+  max-width: 500px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.3;
 }
