@@ -68,6 +68,9 @@ section {
 header {
   background-color: rgba(229, 84, 115, 0.1);
   padding: 50px 150px 0px 150px;
+  background-image: url(../Assets//background/bg-5.png);
+  background-position: top left;
+  background-repeat: no-repeat;
 }
 header h1 {
   max-width: 500px;
@@ -127,14 +130,84 @@ header img {
   line-height: 1.5;
   text-decoration: underline;
 }
+/* Deal of the day */
+.deal-of-the-day {
+  margin: 0 0 !important;
+  padding: 80px 150px;
+  background-color: rgba(229, 84, 115, 0.1);
+  background-image: url(../Assets//background/bg-1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.countdown {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 630px;
+}
+
+.countdown .single-countdown {
+  padding: 0 20px;
+  color: #999;
+  font-size: 14px;
+}
+.countdown .single-countdown .single-countdown_time {
+  font-size: 40px;
+  color: #555555;
+  margin-right: 10px;
+}
+.countdown-wrapper .single-countdown .single-countdown_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+.dotd-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.dotd-item {
+  height: 340px;
+  width: 280px;
+  padding: 20px;
+  /* background-color: white; */
+}
+.bg-4{
+  background-color: #f5fcf2;
+}
+.dotd-item img {
+  display: block;
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.dotd-item p {
+  color: #272727;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.dotd-item:hover  p{
+  text-decoration: underline;
+
+}
 
 /* Service */
 .service-container {
   border-radius: 8px;
   background-color: rgba(39, 39, 39, 0.05);
+  background-image: url(../Assets/background/bg-1.png);
+  background-size: cover;
+  background-position: center center;
   padding: 75px 130px;
   gap: 60px;
+  backdrop-filter: blur(8px); 
 }
+
 .service-items {
   display: flex;
   flex-direction: column;
@@ -156,6 +229,15 @@ header img {
   line-height: 1.5;
 }
 /* hot deals */
+  .hot-deals {
+    margin: 0 0 !important;
+    padding: 50px 150px;
+    background-color: rgba(229, 84, 115, 0.1);
+    background-image: url(../Assets/background/bg-5.png);
+  }
+  .hot-deals p {
+    margin-bottom: 28px !important;
+  }
 .hot-deals-image-container img {
   height: 380px;
   width: 300px;
@@ -170,14 +252,18 @@ header img {
 /* newsletter */
 .newsletter {
   padding: 75px 225px;
-  background-image: url("../Assets/newsletter.png");
-  background-position: center;
+  background-image: url("../Assets/background/banner3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.newsletter h3{
+  margin-bottom: 12px;
 }
 .newsletter-container input {
   font-size: 14px;
   border: none;
+  border-radius: 8px;
   margin-right: 10px;
   padding: 18px 225px 18px 18px;
 }
@@ -196,6 +282,9 @@ footer {
   background-color: #111010;
   text-align: center;
   padding: 100px 0;
+  background-image: url(../Assets//background/bg-4.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 footer .footer-desc {
   color: rgba(255, 255, 255, 0.7);
