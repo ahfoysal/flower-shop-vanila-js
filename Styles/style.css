@@ -135,10 +135,10 @@ header img {
   margin: 0 0 !important;
   padding: 80px 150px;
   background-color: rgba(229, 84, 115, 0.1);
-  /* background-color: palevioletred; */
-  background-image: url(../Assets//background/bg-1.png);
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-image: url(../Assets//background/bg-1.png),
+    url(../Assets//background/bg-7.png);
+  background-position: top center, bottom left;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .countdown {
@@ -174,7 +174,7 @@ header img {
   height: 340px;
   width: autoy;
   border-radius: 5px;
-  background-color: white;
+  background-color: #f2f2f2;
   padding: 20px;
 }
 .bg-4 {
@@ -207,9 +207,11 @@ header img {
 .service-container {
   border-radius: 8px;
   background-color: rgba(39, 39, 39, 0.05);
-  background-image: url(../Assets/background/bg-1.png);
-  background-size: cover;
-  background-position: center center;
+  background-image: 
+    url(../Assets//background/bg-6.png);
+  background-position: top right;
+  background-size: 180px;
+  background-repeat: no-repeat;
   padding: 75px 130px;
   gap: 60px;
   backdrop-filter: blur(8px);
